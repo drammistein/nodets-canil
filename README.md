@@ -25,3 +25,11 @@ Dentro do arquivo package.json
 
 ### Para rodar o projeto
 `npm run start-dev`
+
+### Atualizando o projeto no repositório
+`git --global config user.teuNome`
+`git --global config user.teuEmail`
+
+`git add .`
+`git commit -m "nome do teu commit"`
+`git push` Vai enviar arquivos novos para o repositório
