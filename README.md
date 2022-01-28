@@ -33,3 +33,21 @@ Dentro do arquivo package.json
 `git add .`
 `git commit -m "nome do teu commit"`
 `git push` Vai enviar arquivos novos para o repositório
+
+### Configurando o Projeto para Javascript
+ -> Mudar no package.json
+ -> Adicionar a linha 
+  "engines": {
+    "node": "14.x" colocar a versão do node
+  },
+
+  -> Criar um arquivo: Procfile
+  -> Adiciona a linha no arquivo: web: npm start
+
+  -> `npm install --save-dev copyfiles` instalação de biblioteca
+  -> No arquivo package.json adicionar no Scripts:
+  -> "start": "node dist/server.js",
+  -> "postinstall": "tsc && copyfiles -u 1 src/**/*.mustache dist/",
+
+  -> Rodar o código no terminal:
+  -> `npm run postinstall`
