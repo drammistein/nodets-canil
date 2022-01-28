@@ -51,3 +51,22 @@ Dentro do arquivo package.json
 
   -> Rodar o código no terminal:
   -> `npm run postinstall`
+
+  ### Heroku
+  -> Colocar o projeto na web
+  -> Instalar o Heroku no PC.
+  -> No terminal digitar: 
+  -> heroku login
+  -> heroku create
+  -> `npm install typescript`
+  -> No arquivo package.json colococar no scripts:
+  -> "tsc": "tsc",
+  -> Adicionar no início da linha "postinstall": "npm run tsc ..."
+
+  ### Atualizar o repositório
+  -> `git add .`
+  -> `git commit -m "heroku setup - add tsc"`
+  -> `git push heroku main`
+
+  ### Abrir o link criado do projeto no Heroku
+  -> heroku open
